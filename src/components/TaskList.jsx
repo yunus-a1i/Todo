@@ -17,7 +17,7 @@ export default function TaskList({ tasks }) {
           <p className="text-gray-700">{task.description}</p>
           <div className="text-sm text-gray-500 flex items-center gap-1">
             <Calendar className="text-red-500 w-4 h-4" />
-            <span>Deadline: {new Date(task.deadline).toLocaleDateString()}</span>
+            <span>Deadline: {new Date(task.deadline).toDateString()}</span>
           </div>
         </div>
       ))}
